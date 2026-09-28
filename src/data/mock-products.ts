@@ -215,8 +215,8 @@ export const products: Product[] = [
 ];
 
 export const trendingProducts = products.slice(0, 8);
-export const bestSellers = [products[3], products[6], products[0], products[7], products[5], products[9]];
-export const newArrivals = [products[8], products[9], products[11], products[2], products[10], products[5], products[4]];
+export const bestSellers = [products[3]!, products[6]!, products[0]!, products[7]!, products[5]!, products[9]!];
+export const newArrivals = [products[8]!, products[9]!, products[11]!, products[2]!, products[10]!, products[5]!, products[4]!];
 
 export const searchSuggestions = [
   "Matte lipstick",
