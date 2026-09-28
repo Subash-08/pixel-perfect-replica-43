@@ -81,7 +81,7 @@ export function Header() {
                       Shop {item}
                     </p>
                     <ul className="grid grid-cols-2 gap-x-6 gap-y-2.5">
-                      {megaMenu[item].map((sub) => (
+                      {(megaMenu[item] ?? []).map((sub) => (
                         <li key={sub}>
                           <a href="#categories" className="text-sm text-foreground hover:text-coral">
                             {sub}
@@ -156,7 +156,7 @@ export function Header() {
                           </button>
                           {open ? (
                             <ul className="grid grid-cols-2 gap-y-2 pb-4">
-                              {megaMenu[item].map((sub) => (
+                              {(megaMenu[item] ?? []).map((sub) => (
                                 <li key={sub}>
                                   <a href="#categories" className="block py-1 text-sm text-muted-foreground">
                                     {sub}
